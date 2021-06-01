@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2002-2021 Advanced Media, Inc. All Rights Reserved.
  *
- * see ../lic/license.txt
+ * see LICENSE
  *
  * build command
  * $gcc ami_pulseaudio_core.cpp -I./ -lpulse -lpulse-simple -lpthread -fPIC -shared -o libami_pulseaudio.so
