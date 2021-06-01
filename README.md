@@ -8,7 +8,7 @@ LICENSE
 ./sample/
 
 ビルドコマンド
-$make
+> $make
 
 実行コマンド
-$bash run.sh
+> $bash run.sh
