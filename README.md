@@ -1,5 +1,5 @@
 ライセンス
-./lic/license.txt
+LICENSE
 
 ライブラリソース
 ./src/
