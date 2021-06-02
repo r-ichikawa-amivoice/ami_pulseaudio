@@ -1,3 +1,18 @@
+/*
+ *
+ * Copyright (C) 2021 Advanced Media, Inc. All Rights Reserved.
+ *
+ * This software is released under the [Apache License, Version 2.0]
+ * see ../LICENSE
+ *
+ */
+/*
+ * @file ami_pulseaudio_core.cpp
+ * @brief マルチスレッドにしたpulse_simpleラッパー
+ * @author ichikawa
+ * @date 20210319
+ */
+
 #ifndef __AMI_PULSEAUDIO_CORE_H_
 #define __AMI_PULSEAUDIO_CORE_H_
 

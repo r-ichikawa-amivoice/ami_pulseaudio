@@ -1,8 +1,9 @@
 /*
  *
- * Copyright (C) 2002-2021 Advanced Media, Inc. All Rights Reserved.
+ * Copyright (C) 2021 Advanced Media, Inc. All Rights Reserved.
  *
- * see LICENSE
+ * This software is released under the [Apache License, Version 2.0]
+ * see ../LICENSE
  *
  * build command
  * $gcc ami_pulseaudio_core.cpp -I./ -lpulse -lpulse-simple -lpthread -fPIC -shared -o libami_pulseaudio.so
