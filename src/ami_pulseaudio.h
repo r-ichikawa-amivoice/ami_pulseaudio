@@ -7,7 +7,7 @@
  *
  */
 /*
- * @file ami_pulseaudio_core.cpp
+ * @file ami_pulseaudio.h
  * @brief マルチスレッドにしたpulse_simpleラッパー
  * @author ichikawa
  * @date 20210319
