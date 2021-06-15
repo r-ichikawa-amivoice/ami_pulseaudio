@@ -118,14 +118,19 @@ void* ami_pulseaudio_create(ami_pulseaudio_callback_func callback){
 	}while(0);
 
 	//初期化出来ていなかったら0を返す
-	if(is_setup_complete == 0){
+	if(!is_setup_complete){
+		ami_pulseaudio_change_state(ap_, AMI_PULSEAUDIO_STATE_ERROR);
+
 		ami_pulseaudio_free(ap_);
 		ap_ = 0;
-		ami_pulseaudio_printf(AMI_PULSEAUDIO_LOG_ERROR, "Failed to setup ap\n");
-	}
 
-	//オッケーそうだからステータスを待機に
-	ami_pulseaudio_change_state(ap_, AMI_PULSEAUDIO_STATE_POUSE);
+		ami_pulseaudio_printf(AMI_PULSEAUDIO_LOG_ERROR, "Failed to setup ap\n");
+	}else{
+
+		//オッケーそうだからステータスを待機に
+		ami_pulseaudio_change_state(ap_, AMI_PULSEAUDIO_STATE_POUSE);
+
+	}
 
 	ami_pulseaudio_printf(AMI_PULSEAUDIO_LOG_INFO, "ami_pulseaudio_create: create OK!\n");
 
