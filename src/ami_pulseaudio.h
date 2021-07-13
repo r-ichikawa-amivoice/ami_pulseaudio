@@ -36,7 +36,6 @@ enum AMI_PULSEAUDIO_STATE {
 	AMI_PULSEAUDIO_STATE_RECORDING = 2,
 };
 
-/callbackのステータス
 /**
  *  @enum AMI_PULSEAUDIO_RESULT_STATE 
  *  callbackのステータス
