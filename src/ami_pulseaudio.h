@@ -21,7 +21,8 @@
 extern "C" {
 #endif
 
-/** @enum AMI_PULSEAUDIO_RESULT_STATE
+/**
+ *  @enum AMI_PULSEAUDIO_RESULT_STATE
  *  AMI_PULSEAUDIOのステータス
  */
 enum AMI_PULSEAUDIO_STATE {
@@ -36,7 +37,8 @@ enum AMI_PULSEAUDIO_STATE {
 };
 
 /callbackのステータス
-/** @enum AMI_PULSEAUDIO_RESULT_STATE 
+/**
+ *  @enum AMI_PULSEAUDIO_RESULT_STATE 
  *  callbackのステータス
  *  コールバックの処理はこの値を見てから処理をすると良い
  */
