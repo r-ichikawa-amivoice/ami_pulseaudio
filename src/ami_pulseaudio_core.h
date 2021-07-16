@@ -49,11 +49,11 @@ typedef struct{
 	//ステータス情報
 	enum AMI_PULSEAUDIO_STATE state;
 	//audio_data
-	//どうせ1対1で必要だから中に入れちゃう
+	//1対1で必要だから中に入れる
 	char audio_data[AMI_PULSEAUDIO_DATA_SIZE];
 	//pulseaudioの変数
 	pa_simple* ps;
-	//コールバック関数はここに入れとく
+	//コールバック関数はここに入れる
 	ami_pulseaudio_callback_func callback;
 	//録音の指示フラグ
 	int instruction = 0;
