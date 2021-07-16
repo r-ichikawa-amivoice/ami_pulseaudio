@@ -99,7 +99,7 @@ void* ami_pulseaudio_create(ami_pulseaudio_callback_func callback){
 	//ステータスをセットアップ状態に
 	ami_pulseaudio_change_state(ap_, AMI_PULSEAUDIO_STATE_SETUP);
 
-	//色々セッティング
+	//paのセッティング
 	do{
 		pa_sample_spec ss;
 
@@ -127,7 +127,6 @@ void* ami_pulseaudio_create(ami_pulseaudio_callback_func callback){
 		ami_pulseaudio_printf(AMI_PULSEAUDIO_LOG_ERROR, "Failed to setup ap\n");
 	}else{
 
-		//オッケーそうだからステータスを待機に
 		ami_pulseaudio_change_state(ap_, AMI_PULSEAUDIO_STATE_POUSE);
 
 	}
