@@ -75,7 +75,7 @@ void* ami_pulseaudio_read(void* ap){
 	}
 	ap_->callback(AMI_PULSEAUDIO_RESULT_STATE_STOPPED, 0, 0);
 
-	ami_pulseaudio_change_state((void*)ap_, AMI_PULSEAUDIO_STATE_POUSE);
+	ami_pulseaudio_change_state((void*)ap_, AMI_PULSEAUDIO_STATE_PAUSE);
 	
 	ami_pulseaudio_printf(AMI_PULSEAUDIO_LOG_DEBUG, "ami_pulseaudio_read <-\n");
 }
@@ -127,7 +127,7 @@ void* ami_pulseaudio_create(ami_pulseaudio_callback_func callback){
 		ami_pulseaudio_printf(AMI_PULSEAUDIO_LOG_ERROR, "Failed to setup ap\n");
 	}else{
 
-		ami_pulseaudio_change_state(ap_, AMI_PULSEAUDIO_STATE_POUSE);
+		ami_pulseaudio_change_state(ap_, AMI_PULSEAUDIO_STATE_PAUSE);
 
 	}
 
@@ -179,7 +179,7 @@ int ami_pulseaudio_start(void* ap){
 		}
 		state = ap_->state;
 		instruction = ap_->instruction;
-		if(state != AMI_PULSEAUDIO_STATE_POUSE){
+		if(state != AMI_PULSEAUDIO_STATE_PAUSE){
 			ami_pulseaudio_printf(AMI_PULSEAUDIO_LOG_WORNING, "ami_pulseaudio_start: can not start : state: %d\n", state);
 			break;
 		}
